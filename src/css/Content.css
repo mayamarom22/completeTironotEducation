@@ -1,0 +1,94 @@
+/* Content wrapper: full width so navbar + subject area share same width; min-width 0 for flex shrink */
+.content-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.nav-btns {
+    width: 5.7rem;
+    /* margin: 1rem; */
+}
+.nextBtn {
+    position: absolute;
+    top: 87%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+}
+.backBtn {
+    position: absolute;
+    top: 87%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+.disabled {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.title-chapter {
+    font-family: "noot";
+    color: #477FA3;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.title-content-chapter {
+   font-family: "noot";
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #004288;
+    padding: 0rem 1rem;  
+}
+
+.title-content {
+   font-family: "noot";
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #004288;
+    padding: 0rem 1rem;  
+}
+
+.sec-title-content {
+    font-family: "rubik-bold";
+    color: #477FA3;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    padding: 0rem 1rem;   /* גם כאן */
+}
+.text-content {
+     color: #477FA3;
+     font-family: "rubik";
+     margin-top: 0.5rem;
+    padding: 0rem 1rem;
+    font-size: 1.1rem;
+}
+
+/* intro */
+.meetEduImg {
+    width: 7rem;
+    margin-top: 2rem;
+    margin-left: 9rem;
+} 
+.IDFspiritImg {
+    width: 7rem;
+    margin-top: -1rem;
+    margin-right: 9rem;
+} 
+.IDFscrollImg {
+    width: 7rem;
+    margin-top: -1rem;
+    margin-left: 9rem;
+} 

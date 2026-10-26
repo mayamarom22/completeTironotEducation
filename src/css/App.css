@@ -1,0 +1,137 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  /* background-color: #c2deff; */
+  overscroll-behavior: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 91vh;
+  overflow:  hidden;
+  /* background-color: #FEECD8; */
+}
+::selection {
+  background-color: #d498a0d8;
+  color: white;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  direction: rtl;
+  width: 100%;
+  max-width: 430px;
+  height: 91vh;
+  background-color: #D3EEFF;
+  overflow: hidden;
+  position: relative;
+  /* direction: ltr; */
+}
+@font-face {
+    font-family: "rubik";
+    src: url("../assets/fonts/Rubik-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "rubik-bold";
+    src: url("../assets/fonts/Rubik-Bold.ttf") format("truetype");
+  }
+    @font-face {
+    font-family: "noot";
+    src: url("../assets/fonts/Noot.otf") format("truetype");
+  }
+.bahadEdu {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 3;
+    width: 2.2rem;
+  }
+  .til-logo {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 3;
+    width: 3.2rem;
+  }
+  .about-btn {
+    position: absolute;
+    border: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    background-color: #C38D94;
+    border-radius: 150px;
+    width: 2rem;
+    height: 2rem;
+    right: 1rem;
+    top: 1rem;
+    /* font-family: "rubik"; */
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.about-text-btn {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 2rem;
+  height: 2rem;
+  left: 8.7rem;
+  top: 3rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  font-family: "rubik";
+  color: #FFEE97;
+}
+
+.div-about {
+    position: absolute;
+    color: #C38D94;
+    width: 40%;
+    height: 45%;
+    right: 4rem;
+    top: 5rem;
+    font-family: "rubik";
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.list-text-about {
+    transition: background-color 0.5s ease;
+    margin: 5%;
+}
+
+.list-text-about:hover {
+    background-color: #dbdbdb;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.fade-out1.hidden {
+  display: none;
+}

@@ -1,0 +1,124 @@
+.open-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.opening-title {
+    font-family: "noot";
+    font-size: 2rem;
+    margin-top: 6rem;
+    color: #004288;
+    padding: 0rem 1rem;
+    /* position: relative; */
+    
+}
+.opening-text {
+    margin-top: -0.5rem;
+    padding: 1rem;
+    color: #477FA3;
+    font-size: 1.2rem;
+}
+.bold {
+    font-family: "rubik-bold";
+    font-size: 1.5rem;
+}
+.regular {
+    font-family: "rubik";
+}
+.btn-start-div {
+    width: 7rem;             /* רוחב מלא של הדיב */
+  height: 10rem;           /* אפשר לשנות לפי הצורך */
+  background-image: url('../assets/images/btnStart.png'); /* הנתיב לתמונה */
+  background-size: contain;    /* ממלא את הדיב כולו */
+  background-position: center; /* ממקם את התמונה במרכז */
+  background-repeat: no-repeat; /* מונע חזרה של התמונה */
+  display: flex;
+  align-items: center;
+}
+.btn-text {
+    position: relative;
+    top: 0.2rem;
+    right: 1.2rem;
+    font-family: "noot";
+    color: white;
+    width: 4rem;
+    font-size: 1.3rem;
+}
+.fade-in{
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out{
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeIn{
+  from{ opacity:0; }
+  to{ opacity:1; }
+}
+
+@keyframes fadeOut{
+  from{ opacity:1; }
+  to{ opacity:0; }
+}
+/* UserDetails */
+.character-section {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+}
+.user-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    margin-top: -8.5rem;
+    /* position: relative;
+    right: 9rem; */
+}
+.input-title {
+    font-family: "rubik-bold";
+    color: #477FA3;
+    
+}
+/* .input-field {
+    margin-bottom: 1rem;
+} */
+
+.details-img {
+    width: 20rem;
+    /* position: relative;
+    top: -1rem; */
+}
+.change-btn {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #477FA3;
+    font-family: "rubik-bold";
+}
+.toIntro-btn {
+    font-family: "noot";
+    color: white;
+    background-color: #C38D94;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-top: 0.8rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    transition: 0.2s;
+}
+.error-text{
+color:red;
+font-size:14px;
+margin-top:4px;
+}
+.disabled-btn{
+background-color: #bfbfbf;
+cursor: not-allowed;
+opacity: 0.7;
+}

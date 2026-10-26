@@ -1,0 +1,367 @@
+.closeScroll {
+  margin-top: 2rem;
+  width: 7rem;
+}
+
+.scrollWithText {
+  margin-top: 1rem;
+  width: 15rem;
+
+}
+
+.floating {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-img {
+  transition: opacity 0.3s ease;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.goal-scroll-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  /* text-align: center; */
+
+  /* margin-top: -1rem; */
+}
+
+.goal-scroll {
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 1;
+  position: relative;
+  right: 0rem;
+  top: 0.4rem;
+  transition: transform 0.3s;
+}
+
+.goal-scroll-text-con {
+  background-color: white;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  position: relative;
+  left: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.goal-scroll-text {
+  padding: 1rem;
+  color: #477FA3;
+  width: 97%;
+  font-family: "rubik";
+  /* font-size: 0.9rem; */
+}
+/* אנימציית גדילה/קטנה */
+.pulse {
+  animation: pulseAnim 1.5s infinite;
+}
+
+@keyframes pulseAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* @keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+} */
+/* כשהטקסט אמור להופיע */
+.goal-scroll-text-con.show {
+  opacity: 1;
+}
+.hide {
+opacity: 0;
+}
+.group {
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  /* pointer-events: none; */
+}
+.identity-text {
+  font-family: "rubik-bold";
+  color: white;
+  background-color: #477FA3;
+  /* width: 20rem; */
+  padding: 0.5rem;
+  margin: 2rem 1rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* כשהוא אמור להופיע */
+.identity-text.show {
+  opacity: 1;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+.popup-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-box {
+  background-color: #477FA3;
+
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  animation: popIn 0.3s ease;
+}
+
+.popup-title {
+  font-size: 1.3rem;
+  font-family: "rubik-bold";
+  color: white;
+  margin-bottom: 1rem;
+}
+.characterEnd {
+  position: relative;
+}
+
+.popup-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #477FA3;
+}
+
+.popup-end-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #C38D94;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  font-family: "rubik-bold";
+  /* margin-top: 2rem; */
+  /* top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.pazzle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pazzle-svg {
+  width: 100%;
+  padding: 0rem 2rem;
+  height: auto;
+  display: block;
+  }
+
+
+@media (max-width: 375px) {
+  .closeScroll {
+    margin-top: 2rem;
+    width: 6rem;
+  }
+  
+  .scrollWithText {
+    margin-top: 1rem;
+    width: 13.5rem;
+  
+  }
+  .starsInd {
+    width: 25rem;
+  }
+
+}
+@media (max-width: 340px) {
+
+  .starsInd {
+    width: 20rem;
+  }
+
+}
+@media (max-height: 800px) {
+
+  
+  .scrollWithText {
+    margin-top: 1rem;
+    width: 14rem;
+    margin-top: 0rem;
+
+  
+  }
+  .goal-scroll-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    /* text-align: center; */
+  
+    margin-top: -1.5rem;
+  }
+  .goal-scroll {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .goal-scroll-text-con {
+    background-color: white;
+    height: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    position: relative;
+    left: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .goal-scroll-text {
+    /* padding: 1rem; */
+    color: #477FA3;
+    width: 97%;
+    font-family: "rubik";
+    font-size: 0.9rem;
+  }
+  .pazzle-svg {
+    width: 75%;
+    padding: 0rem 0rem;
+    }
+    .starsInd {
+      width: 25rem;
+    }
+    .starsSpirit {
+      width: 18rem;
+    }
+}
+@media (max-height: 760px) {
+  .closeScroll {
+    margin-top: 2rem;
+    width: 6rem;
+  }
+  
+  .scrollWithText {
+    margin-top: 1rem;
+    width: 12rem;
+    margin-top: 0rem;
+
+  
+  }
+  .goal-scroll-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    /* text-align: center; */
+  
+    margin-top: -2rem;
+  }
+  .goal-scroll {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .goal-scroll-text-con {
+    background-color: white;
+    height: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    position: relative;
+    left: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .goal-scroll-text {
+    /* padding: 1rem; */
+    color: #477FA3;
+    width: 97%;
+    font-family: "rubik";
+    font-size: 0.9rem;
+  }
+  .pazzle-svg {
+    width: 60%;
+    padding: 0rem 0rem;
+    }
+
+    .starsInd {
+      width: 23rem;
+    }
+}

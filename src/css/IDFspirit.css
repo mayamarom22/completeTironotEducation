@@ -1,0 +1,321 @@
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 2.5rem;
+  }
+  
+  /* התיבה עצמה */
+  .styled-textarea {
+    width: 15rem;
+    height: 10rem;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    
+  
+    background: #f3f3f3;
+    font-size: 16px;
+    resize: none;
+  
+    /* glow */
+    /* box-shadow: 0 0 30px rgb(255, 255, 210); */
+  }
+  
+  /* placeholder */
+  .styled-textarea::placeholder {
+    color: #999;
+    font-family: "rubik";
+  }
+  
+  /* הפרפר */
+  .butterfly {
+    position: absolute;
+    top: -1rem;
+    right: -1.6rem;
+    width: 4rem;
+  
+    transform: translate(30%, -30%);
+    pointer-events: none; /* שלא יפריע ללחיצה */
+  }
+
+  .submit-btn {
+    background-color: #477FA3;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-family: "rubik-bold";
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+.submit-btn.submitted {
+    background-color: #929292;
+    color: white;
+    cursor: default;
+  }
+
+  /* עמוד 3 */
+
+  .idfSpiritImg {
+    width: 10rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  .spiritParts {
+    width: 15rem;
+    margin-top: 0.5rem
+
+  }
+  .tooltip {
+    font-family: "rubik";
+    color: #004288;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .popup-content-value {
+    background: rgba(255, 255, 255, 0);
+    padding: 1rem;
+    /* border-radius: 1rem; */
+    text-align: center;
+    animation: popupFade 0.4s ease;
+  }
+  
+  .popup-content-value img {
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .popup-btn {
+    margin-top: 5.5rem;
+    margin-right: -2.3rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #477FA3;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    /* top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+  }
+
+  /* flip card */
+
+  .flip-card {
+    background-color: transparent;
+       width: 7rem;
+       height: 5rem;
+       perspective: 1000px;
+       flex-shrink: 0; /* מונע כיווץ */
+   }
+   
+   .flip-card-inner {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       transition: transform 0.6s;
+       transform-style: preserve-3d;
+   }
+   
+   
+   /* כשהכרטיס flipped */
+   .flip-card.flipped .flip-card-inner {
+       transform: rotateY(180deg);
+   }
+   
+   .flip-card-front,
+   .flip-card-back {
+       transition: transform 0.6s;
+       transform-style: preserve-3d;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       -webkit-backface-visibility: hidden;
+       backface-visibility: hidden;
+   }
+   
+   .flip-card-front {
+       border-radius: 0.8rem;
+       overflow: hidden;
+       color: white;
+       background-color: #477FA3;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+   
+   .flip-card-back {
+       background-color: #477FA3;
+       border-radius: 0.8rem;
+       color: white;
+       transform: rotateY(180deg);
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .progress-text {
+    text-align: center;
+    margin-top: 0.6rem;
+    font-family: rubik;
+    font-size: 1rem;
+    color: #004288;
+  }
+  
+  .done-text {
+    color: #0e6412;
+    font-weight: bold;
+  }
+   .change-bag-size {
+       width: 12rem;
+       height: 12rem;
+       font-size: 1.3rem;
+   }
+   
+   .textBack {
+       padding: 5%;
+       font-size: 0.8rem;
+       
+   }
+   
+   .textFront {
+       font-size: 1rem;
+       font-family: "rubik-bold";
+   }
+   
+
+
+
+   
+  .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+  }
+  .card-input {
+    font-family: "rubik";
+    width: 90%;
+    height: 50%;
+  }
+  .cards-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -4rem;
+  }
+
+  .narrowBtnFlip-L {
+    transform: rotate(180deg);
+  }
+  .narrowBtnFlip {
+    width: 4rem;
+  }
+  .narrowBtnFlip.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  .btnHard {
+    width: 10rem;
+    margin-top: 1rem;
+  }
+  .commentImg {
+    margin-top: 1rem;
+  }
+  .comment-hard-text {
+    color: white;
+    font-family: "rubik";
+    width: 10rem;
+    font-size: 1.1rem;
+    margin-top: -13.5rem;
+    margin-right: 5.2rem;
+}
+
+@media (min-width: 350px) and (max-height: 765px) {
+.cards-wrapper {
+  width: 23rem;
+}
+.cards-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -3rem;
+  width: 23rem;
+}
+.textFront {
+  font-size: 3rem;
+  font-family: "rubik-bold";
+}
+}
+@media (max-width: 350px) {
+  .flip-card {
+       width: 6.8rem;
+       height: 4.5rem;
+
+   }
+   .textFront {
+    font-size: 0.9rem;
+    font-family: "rubik-bold";
+}
+     
+ }
+ @media (max-height: 765px) {
+  .flip-card {
+       width: 6rem;
+       height: 3.5rem;
+
+   }
+   .textFront {
+    font-size: 0.85rem;
+    font-family: "rubik-bold";
+}
+.commentImg {
+  width: 12rem;
+  margin-top: 1rem;
+}
+.comment-hard-text {
+  color: white;
+  font-family: "rubik";
+
+  width: 7rem;
+  font-size: 0.85rem;
+  margin-top: -10rem;
+  margin-right: 4rem;
+}
+.spiritParts {
+  width: 13.5rem;
+  margin-top: 0.5rem
+
+}
+ }
