@@ -14,7 +14,7 @@ function About() {
               onClick={(e) => {
                 e.stopPropagation();
                 toggleAbout();
-              }}
+              }} 
             >
               i
             </button>
